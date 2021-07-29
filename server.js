@@ -1,6 +1,6 @@
 const x1 = require("excel4node");
 const wb = new x1.Workbook();
-const ws = wb.addWorksheet("Nome da planilha");
+const ws = wb.addWorksheet("Sheet");
 
 const data = [
     {
@@ -40,4 +40,4 @@ data.forEach(record=>{
     rowIndex++;
 });
 
-wb.write("arquivo.xlxs");
+wb.write("sheet.xlxs");
